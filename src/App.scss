@@ -1,0 +1,233 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+
+  .navbar {
+    width: 100%;
+    height: 32px;
+    background-color: #fad844;
+    border-bottom: 2px solid black;
+    h4 {
+      text-align: right;
+      margin-right: 32px;
+    }
+  }
+
+  .main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #dadad2;
+    // border: 24px solid transparent;
+    // border-left: 70px solid black;
+    // border-right: 28px solid black;
+
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      background-color: #dadad2;
+      // border-right: 2px solid black;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      .intro {
+        margin-bottom: 60px;
+        @media screen and (max-width: 768px) {
+          margin-bottom: 32px;
+        }
+
+        h2 {
+          font-size: 38px;
+          text-align: left;
+
+          @media screen and (max-width: 768px) {
+            font-size: 28px;
+          }
+        }
+      }
+
+      .side-menu {
+        display: flex;
+        width: 100%;
+        margin-bottom: 40px;
+
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 40px;
+          border: 1px solid black;
+          // border-radius: 50%;
+          background-color: #9166ff;
+          color: #f2f2f2;
+          list-style-type: none;
+          box-shadow: black 3px 3px 0px 0px;
+          transition: all ease 0.3s;
+          cursor: pointer;
+          @media screen and (max-width: 768px) {
+            width: 80px;
+            height: 34px;
+          }
+
+          &:not(:last-child) {
+            margin-right: 36px;
+            @media screen and (max-width: 768px) {
+              margin-right: 24px;
+            }
+          }
+
+          &:hover {
+            transform: translateY(-3px);
+          }
+
+          button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .namecard-wrapper {
+        display: flex;
+        width: 400px;
+        height: 200px;
+        margin-bottom: 52px;
+        border: 1px solid black;
+        background-color: #c1c1bf;
+        @media screen and (max-width: 768px) {
+          width: 300px;
+        }
+
+        .namecard {
+          width: 124px;
+          height: 155px;
+          margin: 20px;
+          border: 1px solid black;
+          // overflow: hidden;
+          box-shadow: black 3px 3px 0px 0px;
+          @media screen and (max-width: 768px) {
+            width: 100px;
+          }
+
+          img {
+            width: 120px;
+            height: 100%;
+            object-fit: cover;
+
+            @media screen and (max-width: 768px) {
+              width: 100px;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          margin-bottom: 28px;
+          list-style-type: none;
+          text-align: left;
+
+          .title {
+            display: inline-block;
+            width: 80px;
+            font-size: 18px;
+            font-family: 400;
+          }
+
+          .content {
+            margin-left: 0px;
+            padding: 0px 4px;
+            border-bottom: 1px solid black;
+            font-size: 18px;
+            font-family: 600;
+            text-align: left;
+          }
+        }
+      }
+
+      .modal {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 500px;
+        height: 300px;
+        border: 2px solid black;
+        background-color: white;
+        transform: translateX(-50%);
+
+        .modal-nav {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          width: 100%;
+          height: 32px;
+          border-bottom: 2px solid black;
+          background-color: #9166ff;
+
+          .close-btn {
+            width: 28px;
+            height: 28px;
+            background-color: transparent;
+            border: none;
+            margin-right: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .content-wrapper {
+      width: 50%;
+      height: 100%;
+      background-color: #ffffff;
+    }
+  }
+}
+/* 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
